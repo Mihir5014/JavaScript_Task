@@ -1,0 +1,11 @@
+@import "tailwindcss";
+
+@layer components{
+    .images{
+        @apply size-30 lg:size-50 md:size-40 object-cover border-2 rounded-xl border-blue-500
+    }
+
+    .img-grid{
+        @apply w-40 h-30 md:w-40 md:h-30
+    }
+}

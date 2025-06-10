@@ -1,0 +1,35 @@
+<!--  Task 2: Fetch and Display Users
+Prompt: Use the Dummy API to fetch a list of users and display their names and emails in the DOM. --> 
+<!DOCTYPE html>
+<html>
+<head>
+	<meta charset="utf-8">
+	<meta name="viewport" content="width=device-width, initial-scale=1">
+	<title>fetch Api</title>
+	
+</head>
+<body>
+	<ul id="user"></ul>
+
+
+
+	<script type="text/javascript">
+
+		fetch("https://api.escuelajs.co/api/v1/users")
+		.then(res=>res.json())
+		.then(data=>{
+		
+			const users = document.getElementById('user');
+			data.forEach((user)=>{
+
+				const li = document.createElement('li');
+				li.textContent = `${user.name} - ${user.email}`;
+				users.appendChild(li);
+
+			});
+		})
+		.catch(err=>console.log(err));
+
+	</script>
+</body>
+</html>

@@ -1,0 +1,7 @@
+@import "tailwindcss";
+
+@layer components{
+    .portfolio-img{
+        /* @apply w-50 h-50 m-10 rounded-2xl md:w-100 sm:w-75; */
+    }
+}

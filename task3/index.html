@@ -1,0 +1,48 @@
+<!DOCTYPE html>
+<html>
+<head>
+	<meta charset="utf-8">
+	<meta name="viewport" content="width=device-width, initial-scale=1">
+	<title>Form Validation</title>
+	<style type="text/css">
+		div{
+			margin: 5px;
+			padding: 5px;
+		}
+		input{
+			margin: 10px;
+			padding: 10px;
+			width: 200px;
+		}
+		button{
+			margin: 10px;
+			padding: 10px;
+			width: 100px;
+		}
+	</style>
+</head>
+<body>
+	<form onsubmit="validForm(event)">
+		<div>
+			Name : <input type="text" placeholder="name" id="name">
+			<span id="nmErr" style="color:red"></span>
+		</div>
+		
+		<div>
+			Email : <input type="email" placeholder="email" id="email">
+			<span id="emailErr" style="color:red"></span>
+		</div>
+
+		<div>
+			password : <input type="password" placeholder="pwd" id="pwd">
+			<span id="passwordErr" style="color:red"></span>
+		</div>
+		
+		<button type="submit">submit</button>
+	</form>
+
+
+	<script type="text/javascript" src="index.js"></script>
+	
+</body>
+</html>

@@ -1,0 +1,86 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Pricing Table</title>
+    <link rel="stylesheet" href="./output.css">
+</head>
+
+<body class="min-h-screen h-max items-center flex flex-col justify-center">
+    <!-- toggle -->
+    <div class="mb-10 flex items-center gap-4">
+        <span class="text-gray-700 font-semibold">Monthly</span>
+        <label class="relative inline-flex items-center cursor-pointer">
+            <input type="checkbox" id="billingToggle" class="sr-only peer" />
+            <div
+                class="w-11 h-6 bg-gray-300 peer-focus:outline-none peer-checked:bg-blue-600 rounded-full peer transition-all duration-300">
+            </div>
+            <div
+                class="absolute left-1 top-1 bg-white w-4 h-4 rounded-full transition-transform duration-300 peer-checked:translate-x-full">
+            </div>
+        </label>
+        <span class="text-gray-700 font-semibold">Yearly</span>
+    </div>
+
+    <!-- pricing cards -->
+    <div class="flex flex-wrap justify-center items-center gap-6">
+        <div
+            class="bg-white w-75 h-100 text-center shadow-2xl shadow-amber-150 hover:scale-105 transition duration-500 py-5">
+            <h1 class="text-3xl font-bold">Basic</h1>
+            <p>Lorem ipsum dolor sit amet</p>
+            <h2 class="price bg-orange-400 rounded-2xl p-3 m-3 font-bold" data-monthly="100" data-yearly="900">$100/mo</h2>
+            <div class="text-left pl-10">
+                <p>✔️ 10 GB Space</p>
+                <p>✔️ 1 website</p>
+                <p>✔️ 10 Database</p>
+                <p>✔️ 100 Emails</p>
+                <p>✔️ Unlimited Subdomain</p>
+                <p>✔️ Unlimited Bandwidth</p>
+                <p>✔️ 24/7 Support</p>
+            </div>
+            <button class="bg-orange-400 mt-5 rounded-2xl p-2 px-5 cursor-pointer">BUY NOW</button>
+        </div>
+
+        <div class="bg-white w-75 h-100 text-center shadow shadow-2xl shadow-amber-150 hover:scale-105 transition duration-500 border-4 border-blue-400 py-5">
+            <h1 class="text-3xl font-bold">STANDARD</h1>
+            <p>Lorem ipsum dolor sit amet</p>
+            <h2 class="price bg-blue-400 rounded-2xl p-3 m-3 font-bold" data-monthly="200" data-yearly="1800">$200/mo</h2>
+            <div class="text-left pl-10">
+                <p>✔️ 20 GB Space</p>
+                <p>✔️ 5 website</p>
+                <p>✔️ 10 Database</p>
+                <p>✔️ 100 Emails</p>
+                <p>✔️ Unlimited Subdomain</p>
+                <p>✔️ Unlimited Bandwidth</p>
+                <p>✔️ 24/7 Support</p>
+            </div>
+            <button class="bg-blue-400 mt-5 rounded-2xl p-2 px-5 cursor-pointer">BUY NOW</button>
+        </div>
+
+        <div
+            class="bg-white w-75 h-100 text-center shadow shadow-2xl shadow-amber-150 hover:scale-105 transition duration-500 py-5">
+            <h1 class="text-3xl font-bold">PREMIUM</h1>
+            <p>Lorem ipsum dolor sit amet</p>
+            <h2 class="price bg-red-400 rounded-2xl p-3 m-3 font-bold" data-monthly="300" data-yearly="2700">$300/mo</h2>
+            <div class="text-left pl-10">
+                <p>✔️ 30 GB Space</p>
+                <p>✔️ 10 website</p>
+                <p>✔️ 10 Database</p>
+                <p>✔️ 100 Emails</p>
+                <p>✔️ Unlimited Subdomain</p>
+                <p>✔️ Unlimited Bandwidth</p>
+                <p>✔️ 24/7 Support</p>
+            </div>
+            <button class="bg-red-400 mt-5 rounded-2xl p-2 px-5 cursor-pointer">BUY NOW</button>
+        </div>
+
+    </div>
+
+
+
+    <script src="./index.js"></script>
+</body>
+
+</html>

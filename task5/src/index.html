@@ -1,0 +1,149 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Portfolio</title>
+    <link rel="stylesheet" href="./output.css">
+</head>
+
+<body class="bg-gray-100">
+    <div>
+        <div class="bg-green-900 text-amber-50 rounded-3xl m-5 mx-10 px-5">
+            <div class="flex justify-between items-center p-3">
+                <h1 class="text-xl font-bold">My Portfolio</h1>
+
+                <!-- Hamburger -->
+                <button class="md:hidden block focus:outline-none" id="menu-btn">
+                    <svg class="w-6 h-6 fill-current text-amber-50" xmlns="http://www.w3.org/2000/svg"
+                        viewBox="0 0 24 24">
+                        <path d="M4 6h16M4 12h16M4 18h16" stroke="currentColor" stroke-width="2" stroke-linecap="round"
+                            stroke-linejoin="round" />
+                    </svg>
+                </button>
+
+                <!-- Nav Bar -->
+                <nav class="hidden md:flex" id="menu">
+                    <ul class="flex space-x-6">
+                        <li class="hover:text-amber-100"><a href="#">Home</a></li>
+                        <li class="hover:text-amber-100"><a href="#about">About</a></li>
+                        <li class="hover:text-amber-100"><a href="#projects">Projects</a></li>
+                        <li class="hover:text-amber-100"><a href="#contact">Contact</a></li>
+                    </ul>
+                </nav>
+            </div>
+
+            <!-- Mobile Menu -->
+            <div id="mobile-menu" class="md:hidden hidden flex flex-col space-y-4 p-3 transition-all duration-300">
+                <a href="#" class="hover:text-amber-100">Home</a>
+                <a href="#about" class="hover:text-amber-100">About</a>
+                <a href="#projects" class="hover:text-amber-100">Projects</a>
+                <a href="#contact" class="hover:text-amber-100">Contact</a>
+            </div>
+        </div>
+
+
+        <div class="mt-20 p-2 flex flex-wrap mx-10 px-5">
+            <div class="md:w-1/2 flex flex-col justify-center">
+                <p class="border w-max px-2 border-amber-500">Hello there!</p>
+                <p class="text-2xl md:text-3xl mt-5 font-bold">I'm <span
+                        class="text-yellow-500 font-mono underline">Mihir,</span><br>FrontEnd
+                    Developer.</p>
+                <p class="mt-5">I'm an experienced Web Developer with 2+ years in the field, collaborating with various
+                    companies & startups.</p>
+                <br>
+                <a href="#" class="border rounded-3xl w-max px-5 py-2 hover:bg-amber-300">Hire me</a>
+            </div>
+            <div class="md:w-1/2 flex justify-center mt-10 md:mt-0">
+                <div class="bg-amber-400 overflow-hidden rounded-bl-full rounded-e-full size-50 md:size-60 lg:size-75">
+                    <img class="size-50 md:size-60 mx-auto lg:size-75 object-cover"
+                        src="https://png.pngtree.com/png-clipart/20240211/original/pngtree-portrait-of-a-person-png-image_14289687.png" alt="image">
+                </div>
+            </div>
+        </div>
+
+        <div class="bg-green-800 flex flex-wrap mt-10 text-white" id="about">
+            <div class="w-full p-10 md:w-1/2 flex justify-center">
+                <img class="size-75 md:size-100 bg-amber-400 rounded-full"
+                    src="https://png.pngtree.com/png-clipart/20240211/original/pngtree-portrait-of-a-person-png-image_14289687.png">
+            </div>
+            <div class="w-full md:w-1/2 p-6 flex flex-col justify-center">
+                <p class="text-3xl">- About me</p>
+                <h1 class="text-3xl pt-4">Who is <span class="text-yellow-500 font-mono underline">Mihir?</span></h1><br>
+                <p>Lorem ipsum dolor sit amet consectetur adipisicing elit. Eligendi at porro rerum iusto iure sapiente
+                    non harum incidunt libero amet modi.</p>
+                <div class="flex mt-5 space-x-10">
+                    <p class="text-amber-300">16+<br> Projects completed</p>
+                    <p class="text-amber-300">2+<br> years experience</p>
+                </div>
+
+            </div>
+        </div>
+
+        <div id="projects" class="bg-gray-300 py-10">
+            <h1 class="text-3xl ml-10">- My Portfolio</h1>
+            <div class="flex flex-wrap justify-center">
+                <div class="bg-white rounded-2xl m-10">
+                    <img src="https://encrypted-tbn0.gstatic.com/images?q=tbn:ANd9GcSQR5BF8qByqLxlu08Q3uvS_LVl0wxoSQPpEQ&s"
+                        class="portfolio-img">
+                    <h2 class="m-10 text-xl">Brand Factory - clothing</h2>
+                </div>
+                <div class="bg-white rounded-2xl m-10">
+                    <img src="https://encrypted-tbn0.gstatic.com/images?q=tbn:ANd9GcSQR5BF8qByqLxlu08Q3uvS_LVl0wxoSQPpEQ&s"
+                        class="portfolio-img">
+                    <h2 class="m-10 text-xl">Brand Factory - clothing</h2>
+                </div>
+                <div class="bg-white rounded-2xl m-10">
+                    <img src="https://encrypted-tbn0.gstatic.com/images?q=tbn:ANd9GcSQR5BF8qByqLxlu08Q3uvS_LVl0wxoSQPpEQ&s"
+                        alt="" class="portfolio-img">
+                    <h2 class="m-10 text-xl">Brand Factory - clothing</h2>
+                </div>
+                <div class="bg-white rounded-2xl m-10">
+                    <img src="https://encrypted-tbn0.gstatic.com/images?q=tbn:ANd9GcSQR5BF8qByqLxlu08Q3uvS_LVl0wxoSQPpEQ&s"
+                        alt="" class="portfolio-img">
+                    <h2 class="m-10 text-xl">Brand Factory - clothing</h2>
+                </div>
+            </div>
+        </div>
+
+
+        <form onsubmit="validForm(event)">
+            <div id="contact" class="bg-white py-10 px-4">
+                <h1 class="text-3xl mb-4">- Conatct US</h1>
+                <div class="flex flex-col gap-5 w-150 mx-auto">
+                    <div>
+                        <label for="name" class="block">Your Name</label>
+                        <input type="text" name="name" placeholder="Name" id="name"
+                            class="w-full p-2 bg-gray-200 rounded-md">
+                        <span id="nmErr" class="text-red-500 text-sm"></span>
+                    </div>
+                    <div>
+                        <label for="email" class="block">Your Email</label>
+                        <input type="text" name="email" placeholder="email" id="email"
+                            class="w-full p-2 bg-gray-200 rounded-md">
+                        <span id="emailErr" class="text-red-500 text-sm"></span>
+                    </div>
+                    <div>
+                        <label for="textarea" class="block">Your Message</label>
+                        <textarea name="textarea" placeholder="Message" rows="4" id="textarea"
+                            class="w-full p-2 bg-gray-200 rounded-md"></textarea>
+                        <span id="msgErr" class="text-red-500 text-sm"></span>
+                    </div>
+                    <button type="submit"
+                        class="bg-blue-500 rounded-xl px-6 py-2 hover:bg-green-400 cursor-pointer transition-all">submit</button>
+                </div>
+            </div>
+        </form>
+
+
+        <div class="bg-black p-5 text-white text-center">
+            <p>Copyright @ 2025 Mihir. All rights Reserved.</p>
+        </div>
+    </div>
+
+
+    <script src="index.js"></script>
+</body>
+
+</html>
